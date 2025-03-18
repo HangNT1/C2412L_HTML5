@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1>Bang</h1>
+      <!-- Border neu h ghi gi => default la 1 px  -->
+      <table border="1px" align="center">
+        <thead>
+          <!-- Muon cung dong => <tr>: row -->
+          <tr>
+            <th>STT</th>
+            <th>Họ và tên</th>
+            <th colspan="3">Điểm nói chung</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td rowspan="2">hang</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>phong</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <h1>Duong dan tuyet doi va tuong doi</h1>
+      <p>Anh online - Duong danh tuyet doi</p>
+      <img
+        alt="anh con meo day hihi"
+        src="daffta:image/jpeg;base64,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"
+      />
+      <p>Anh offfline - Duong dan tuyet doi</p>
+      <img src="C/" />
+      <p>Anh offline - tuong doi</p>
+      <!-- .. => ra ngoai  -->
+      <img src="../../img/meo1.jpeg" />
+    </div>
+  </body>
+</html>
