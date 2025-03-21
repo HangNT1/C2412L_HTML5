@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form - input</title>
+  </head>
+  <body>
+    <div>
+      <h1 style="text-align: center">Làm việc với form</h1>
+      <!-- Form: Là 1 biểu mẫu dùng để thu thập thông tin
+       VD: đăng nhập, đăng ký, feedback,... 
+       -- Form sẽ gửi dữ liệu từ phía client (UI - giao diện) về phía admin (server)
+       => xử lý logic 
+       client: HTML,ReactJS...
+       server: Logic: Java - Spring Boot, C# - .Net, PHP : PHẢI LƯU TRỮ VÀ LÀM VIỆC ĐƯỢC VS CSDL 
+       - Cu phap: 
+        <form>
+            Chứa các ô input
+        </form>
+        HTTP Methods: 
+           + GET: de thong tin lo tren trinh duyet - hien thi
+           + POST: che giau thong tin di (xu ly form) - add
+        -->
+      <form action="#" method="POST">
+        Username <input type="text" /> <br />
+        <span>Password </span><input type="password" /><br />
+        <span>Email </span><input type="email" /><br />
+        <span>Giới tính </span>
+        <!-- Chung name: thi co the trong 1 trong cac radio 
+         checked: chon 1 trong cac radion default
+         value => gia tri khi chung ta lay gia tri cua o input(server)
+         => duy nhat=> chi chon 1 
+          -->
+        <input type="radio" name="gioiTinh" checked value="nam" /> Nam
+        <input type="radio" name="gioiTinh" value="a" /> Nữ
+        <input type="radio" name="gioiTinh" value="conLai" /> TH còn lai
+        <br />
+        <span>Sở thích</span>
+        <!-- Checkbox : value, checked -->
+        <!-- nhieu -->
+        <input type="checkbox" value="hoc" checked />Học
+        <input type="checkbox" value="ăn" checked />Ăn
+        <input type="checkbox" value="chơi" checked />Chơi
+        <br />
+        <!-- Combobox: select option -->
+        <span>Môn học</span>
+        <select>
+          <option value="mon toan">A</option>
+          <option value="mon ly">B</option>
+          <option value="mon hoa">C</option>
+        </select>
+        <br />
+        <!-- Date -->
+        <span>Ngay sinh</span>
+        <input type="date" />
+        <br />
+        <!-- Giong input type = text binh thuong 
+         nhung danh dau tren HTML la o input nhiem vu tim kiem -->
+        Search:
+        <input type="search" />
+        <br />
+        Range:
+        <input type="range" max="100" value="50" />
+        <br />
+        File
+        <input type="file" />
+        <br />
+        <!-- Select 2  -->
+        <!-- https://select2.org/getting-started/basic-usage -->
+        <!-- Button 
+         + reset: don sach form 
+         + submit: Gui du lieu di (post)
+         + button: Chi la button
+         -->
+        <!-- <input type="reset" value="Đăng ký" /> -->
+        <button type="submit">Dang ky</button>
+      </form>
+    </div>
+  </body>
+</html>
