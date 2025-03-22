@@ -66,8 +66,22 @@
         File
         <input type="file" />
         <br />
-        <!-- Select 2  -->
+        <input type="text" list="inputData" />
+        <datalist id="inputData">
+          <option>Hằng</option>
+          <option>Nguyên</option>
+          <option>Phong</option>
+          <option>Tiến</option>
+        </datalist>
+        <!-- Select 2 = datalist -->
         <!-- https://select2.org/getting-started/basic-usage -->
+        <!-- Meter co gia tri nho nhat lon nhat va process k co va hien thi khac -->
+        Pin:<meter value="100" min="0" max="100"></meter>
+        <!-- email, search: giong o input nhung trong code biet day la o chuyen dung de tim kie
+         tel: chuyen nhap sdt, number: chuyen nhap so, range: thanh truot -->
+        <input type="range" />
+        <input type="date" />
+        <input type="color" />
         <!-- Button 
          + reset: don sach form 
          + submit: Gui du lieu di (post)
