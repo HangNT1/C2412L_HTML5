@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <span> Thong tin dang nhap </span>
+      <br />
+      <!-- <span> Chon ten dang nhap </span> -->
+      <!-- Nguyen Thuy Hang
+       VD: 0, 1, 11, 111 99999 
+       [0-9]+
+       \d+
+       [a-z A-Z0-9]+
+       minlength="5": Toi thieu bn ky tu
+        maxlength="": Toi da bn ky tu 
+        min="10": dung cho number 
+        max="15" 
+       -->
+      <!-- https://viblo.asia/p/bieu-thuc-chinh-quy-regex-trong-javascript-QpmleQ9mlrd -->
+      <!-- <input type="text" required pattern="[a-z A-Z]+" /> -->
+      <input
+        type="hidden"
+        required
+        pattern="\d+"
+        placeholder="Mời bạn nhập tên"
+      />
+      <br />
+      <span> Email </span>
+      <input type="email" required />
+      <br />
+      <span> Tuoi</span>
+      <input type="number" required />
+      <br />
+      <input type="submit" value="Dang ky" />
+    </form>
+  </body>
+</html>

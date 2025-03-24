@@ -1,0 +1,47 @@
+<!--  Khung xương web => cụ thể 
+ =>
+ Layout: cách thiết kế bố cục của web => dễ nhìn, hợp lý, hợp mắt nhất có thể 
+ CCS: có 3 cách chia layout
+ C1: float: thả trôi - cách cũ - thường sẽ không dùng
+ C2: flex: trục số, trục toạ độ
+ C3: grid: Chia khối/lưới
+  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        border: 3px solid red;
+        width: 100%;
+      }
+      .left-column {
+        float: left;
+        width: 40%;
+        background-color: aquamarine;
+      }
+      .right-column {
+        float: left;
+        width: 50%;
+        background-color: blue;
+      }
+      .container::after {
+        display: block;
+        clear: both;
+        /* Noi dung sau khi tha troi phai la rong
+        Clean Both: Dọn dẹp vùng không gian để các thẻ sau khi thả trôi có chiều cao
+         */
+        content: "";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-column">Cot 1</div>
+      <div class="right-column">Cot 2</div>
+      <p style="float: right; margin-top: 0px">HangNT169</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        /* justify : ngang => ox
+            align - item: doc => oy
+         */
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        margin: 0px;
+        gap: 50px;
+      }
+      header {
+        width: 100%;
+        text-align: center;
+        border: 3px solid red;
+        background-color: aquamarine;
+        border-radius: 100px;
+      }
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+      main {
+        display: flex;
+      }
+      main aside {
+        order: 2;
+      }
+      main div {
+        order: 1;
+      }
+      main section {
+        order: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1>Day la header</h1></header>
+    <!-- <ul>
+      <li>1</li>
+      <li>2</li>
+    </ul> -->
+    <nav>
+      <ul>
+        <li>
+          <a>Trang 1</a>
+        </li>
+        <li>
+          <a>Trang 1</a>
+        </li>
+        <li>
+          <a>Trang 1</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <aside>Day la quang cao</aside>
+      <section>Day la section</section>
+      <!-- div : 1: aside :2 section 3 -->
+      <div>Day la the div</div>
+    </main>
+    <footer>
+      <h1>Day la footer</h1>
+    </footer>
+  </body>
+</html>
