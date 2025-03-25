@@ -255,3 +255,9 @@ Thuộc tính `method` xác định phương thức HTTP (POST hoặc GET) mà t
   - Phức tạp hơn để học: Nếu bạn chưa quen với CSS Grid, nó có thể hơi khó học và khó hiểu hơn Flexbox, đặc biệt là khi cần tạo ra các lưới phức tạp.
 
   - Không cần thiết cho bố cục đơn giản: Grid có thể là quá sức đối với các bố cục đơn giản, nơi Flexbox hoặc thậm chí float có thể giải quyết tốt hơn.
+
+### Link tham khảo:
+
+https://tenten.vn/tin-tuc/float-css-la-gi/
+https://www.w3schools.com/css/css3_flexbox_responsive.asp
+https://viblo.asia/p/css-flexible-box-flexbox-day-du-nhat-Ljy5VDWoZra
