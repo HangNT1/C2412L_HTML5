@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header {
+        display: grid;
+        /* Chia theo cot: columns
+        muon gian deu : auto
+         */
+        grid-template-columns: auto auto auto auto;
+      }
+      .item1 {
+        grid-row: 1 / span 2;
+      }
+      .item2 {
+        grid-column: 2 / span 3;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="item1">Thanh phan 1</div>
+      <div class="item2">Thanh phan 2</div>
+      <div class="item3">Thanh phan 3</div>
+      <div class="item4">Thanh phan 4</div>
+      <div class="item5">Thanh phan 5</div>
+      <div class="item6">Thanh phan 6</div>
+      <div class="item6">Thanh phan 7</div>
+      <div class="item6">Thanh phan 7</div>
+      <div class="item6">Thanh phan 7</div>
+      <div class="item6">Thanh phan 7</div>
+      <div class="item6">Thanh phan 7</div>
+      <div class="item6">Thanh phan 7</div>
+    </header>
+  </body>
+</html>

@@ -258,6 +258,6 @@ Thuộc tính `method` xác định phương thức HTTP (POST hoặc GET) mà t
 
 ### Link tham khảo:
 
-https://tenten.vn/tin-tuc/float-css-la-gi/
-https://www.w3schools.com/css/css3_flexbox_responsive.asp
-https://viblo.asia/p/css-flexible-box-flexbox-day-du-nhat-Ljy5VDWoZra
+- https://tenten.vn/tin-tuc/float-css-la-gi/
+- https://www.w3schools.com/css/css3_flexbox_responsive.asp
+- https://viblo.asia/p/css-flexible-box-flexbox-day-du-nhat-Ljy5VDWoZra
