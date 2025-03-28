@@ -1,0 +1,91 @@
+body {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 30px;
+}
+header {
+  background-color: gray;
+  width: 100%;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+  font-weight: bold;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+main {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+.section-main,
+aside {
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
+}
+.section-main {
+  width: 50%;
+  padding: 10px;
+}
+aside {
+  width: 40%;
+  padding: 10px;
+}
+footer {
+  background-color: gray;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+/* ma gia */
+li:hover {
+  background-color: red;
+  font-size: 50px;
+}
+li {
+  /* Lam muot hon 
+            transition: ten thuoc tinh css thoi gian ease
+            ease: lam muot 
+            ease in: chuyen dong bat dau tu tu => tang dan len toc do 
+            ease out: chuyen dong nhanh dan => sau thi cham dan 
+            ease in-out: ket hop ca 2
+         */
+  transition: background-color 5s ease;
+  transition: font-size 5s ease;
+}
+/* https://viblo.asia/p/tim-hieu-nhanh-ve-css3-animation-oOVlYnaV58W */
+/* animation: @keyframe */
+/* infinite : chay mai mai */
+h1 {
+  animation: nhapNhay 6s infinite;
+}
+
+@keyframes nhapNhay {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* responsive tren dien thoai di dong  */
+@media only screen and (max-width: 610px) and (min-width: 600px) {
+  /* lam gi thi lam => co the chia lai layout cung duoc hoac dieu chinh gi */
+  h1 {
+    background-color: red;
+  }
+  /* viet nhieu */
+}
