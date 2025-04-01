@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- C1: dat tren  -->
+    <!-- <script>
+      // Viet code JS
+      // thong bao
+      alert("Xin chao ...");
+      // muon nhap tt
+      var name = prompt("Nhap ten di");
+      // in duoi man hinh
+      console.log(name);
+      // Viet 1 gia tri tren HTML
+      document.writeln("Hien thi text tren HTML");
+    </script> -->
+  </head>
+  <body>
+    <h1>Buoi 9 - JS (Javascript)</h1>
+    <!-- 
+    client-side => FE: JS => Framework: React JS, Angular , Vue JS.......
+    server-side => BE: logic & CSDL (SQL): nodeJS (code BE, PHP, Java, C#...)
+    Dat trong cap the: script. Co 2 vi tri dat the script
+    1. Dat nhu CSS: trong the head => phia tren 
+    2. Dat o duoi cung cua body
+    Giong nhu CSS. JS viet truc tiep => internal => viet trong file HTML 
+    C2: external => tach file (src)
+    -->
+    <!-- 
+    CSS: class : .
+     id: # => duy nhat
+     -->
+    <h1 class="h1-container">The h1</h1>
+    <p id="p-id">Gia tri the p</p>
+    <button onclick="clickMe1()">Click</button>
+    <span id="span-id" style="color: red; border: 1px solid red"></span>
+    <!-- <script src="./index.js">
+      // Viet code JS
+    </script> -->
+    <script>
+      // C1: Viet ham nhu C
+      function clickMe1() {
+        // muon lam gi thi lam
+        alert("Ban vua click vao toi");
+        for (let index = 0; index < 10; index++) {
+          console.log(index);
+        }
+      }
+      // Lay gia tri cua ID
+      let value = document.getElementById("p-id");
+      console.log(value);
+      // Lay gia tri cua class
+      const value1 = document.getElementsByClassName("h1-container");
+      console.log(value1);
+      // gia tri
+      const name = "Nguyen Van a";
+      // B1: Lay ID cua span
+      document.getElementById("span-id").innerHTML = name;
+    </script>
+  </body>
+</html>
