@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- cavans => dung de ve hinh  -->
+    <canvas
+      style="border: 1px red solid"
+      width="500px"
+      height="500px"
+      id="cv"
+    ></canvas>
+  </body>
+  <script>
+    // Lay duoc vi tri cavans
+    var c = document.getElementById("cv");
+    // ve 2d
+    var ctx = c.getContext("2d");
+    // bat dau ve => cam but
+    ctx.beginPath();
+    // bat dau la ve vi tri nao do => moveTo
+    // ctx.moveTo(50, 50);
+    // ctx.lineTo(50, 100);
+    // ctx.lineTo(100, 100);
+    // ctx.lineTo(100, 50);
+    // ctx.lineTo(50, 50);
+    // De 2: Di hvuong vao mep
+    // ctx.moveTo(0, 0);
+    // ctx.lineTo(0, 50);
+    // ctx.lineTo(50, 50);
+    // ctx.lineTo(50, 0);
+    // ctx.lineTo(0, 0);
+    // ve hcn o vi tri 100, 50 co chieu dai 20, chieu rong 10
+    // ctx.fillStyle = "red";
+    // // thu tu cua tham so: x,y,chieu ngang - 0x, chieu doc - oy (x,y: diem bat dau dat but)
+    // ctx.fillRect(100, 52, 30, 30);
+    // ctx.strokeStyle = "blue";
+    // ctx.strokeRect(100, 50, 20, 20);
+    // ctx.stroke();
+    ctx.arc(100, 50, 50, 0, 2 * Math.PI);
+    ctx.stroke();
+    // https://viblo.asia/p/gioi-thieu-html5-canvas-PjxMeV6gG4YL
+  </script>
+</html>
