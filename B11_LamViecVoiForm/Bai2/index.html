@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <span>So thu 1</span>
+      <input type="number" id="num1" />
+      <br />
+      <span>So thu 2</span>
+      <input type="number" id="num2" />
+      <br />
+      <input type="button" value="Tong" onclick="sum()" />
+      <span id="kq"></span>
+    </form>
+    <script>
+      let n1 = document.getElementById("num1");
+      let n2 = document.getElementById("num2");
+      let kq = document.getElementById("kq");
+      function sum() {
+        // Ep kieu ve dang so
+        let kq1 = Number(n1.value) + Number(n2.value);
+        kq.innerText = kq1;
+      }
+    </script>
+  </body>
+</html>

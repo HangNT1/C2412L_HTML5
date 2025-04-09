@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      MSSV: <input type="text" />
+      <br />
+      Tên: <input type="text" />
+      <br />
+      Tuổi: <input type="number" />
+      <br />
+      Địa chỉ: <input type="text" />
+      <br />
+      Giới tính:
+      <input type="radio" name="gioiTinh" value="Nam1" checked />Nam
+      <input type="radio" name="gioiTinh" value="Nữ" />Nữ
+      <br />
+      Ngành học:
+      <select name="">
+        <option value="CNTT">CNTT</option>
+        <option value="CNTT1">CNTT1</option>
+        <option value="CNTT2">CNTT2</option>
+        <option value="CNTT3">CNTT3</option>
+      </select>
+      <br />
+      <button type="button">Add</button>
+      <button type="button">Update</button>
+      <button type="button">Reset</button>
+    </form>
+    <h1>Danh sach sinh vien</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>STT</th>
+          <th>MSSV</th>
+          <th>Ten</th>
+          <th>Tuoi</th>
+          <th>Dia chi</th>
+          <th>Gioi tinh</th>
+          <th>Chuyen nganh</th>
+          <th>Hanh dong</th>
+        </tr>
+      </thead>
+      <tbody id="table-data"></tbody>
+    </table>
+    <script src="./index.js"></script>
+  </body>
+</html>
