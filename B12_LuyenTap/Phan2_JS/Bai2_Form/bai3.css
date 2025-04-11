@@ -1,0 +1,27 @@
+h1 {
+  text-align: center;
+}
+form {
+  border: 1px solid black;
+  width: 60%;
+  margin: 0 auto;
+}
+label,
+input,
+button {
+  margin: 10px;
+}
+input {
+  width: 90%;
+  padding: 5px;
+}
+button {
+  transition: background-color 5s ease;
+}
+button:hover {
+  background-color: green;
+}
+span {
+  margin: 10px;
+  color: red;
+}
