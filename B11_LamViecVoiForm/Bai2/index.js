@@ -63,5 +63,35 @@ function xoaSinhVien(ma) {
   // hien thi lai danh sach table
   hienThiDuLieu();
 }
+function detailSinhVien(mssv) {
+  console.log(layDuLieuTuForm());
+}
 
-function detailSinhVien(mssv) {}
+// update & add: Deu su dung form de lay data => co the tach 1 ham rieng
+function layDuLieuTuForm() {
+  const sv = {}; // Tao doi tuong sv rong
+  // Lay du lieu tu input
+  // byId => moi truong id => get khac nhau
+  // => Doan nen lay theo class
+  let inputs = document.getElementsByClassName("input-text");
+  for (let index = 0; index < inputs.length; index++) {
+    // lay truong cua tung o input
+    const field = inputs[index].getAttribute("data-field");
+    // RIENG TRUONG INPUT TYPE RADION/CHECKBOX
+    console.log(inputs[index]);
+
+    if (inputs[index].type === "radio") {
+      if (inputs[index].checked) {
+        sv[field] = inputs[index].value;
+        // sv[gioiTinh]
+      }
+    } else {
+      sv[field] = inputs[index].value;
+    }
+  }
+  return sv;
+}
+function addSinhVien() {
+  listSinhVien.push(layDuLieuTuForm());
+  hienThiDuLieu();
+}

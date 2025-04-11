@@ -7,27 +7,40 @@
   </head>
   <body>
     <form>
-      MSSV: <input type="text" />
+      MSSV: <input type="text" class="input-text" data-field="mssv" />
       <br />
-      Tên: <input type="text" />
+      Tên: <input type="text" class="input-text" data-field="ten" />
       <br />
-      Tuổi: <input type="number" />
+      Tuổi: <input type="number" class="input-text" data-field="tuoi" />
       <br />
-      Địa chỉ: <input type="text" />
+      Địa chỉ: <input type="text" class="input-text" data-field="diaChi" />
       <br />
       Giới tính:
-      <input type="radio" name="gioiTinh" value="Nam1" checked />Nam
-      <input type="radio" name="gioiTinh" value="Nữ" />Nữ
+      <input
+        type="radio"
+        class="input-text"
+        name="gioiTinh"
+        value="Nam1"
+        data-field="gioiTinh"
+        checked
+      />Nam
+      <input
+        type="radio"
+        class="input-text"
+        data-field="gioiTinh"
+        name="gioiTinh"
+        value="Nữ"
+      />Nữ
       <br />
       Ngành học:
-      <select name="">
+      <select class="input-text" data-field="chuyenNganh">
         <option value="CNTT">CNTT</option>
         <option value="CNTT1">CNTT1</option>
         <option value="CNTT2">CNTT2</option>
         <option value="CNTT3">CNTT3</option>
       </select>
       <br />
-      <button type="button">Add</button>
+      <button type="button" onClick="addSinhVien()">Add</button>
       <button type="button">Update</button>
       <button type="button">Reset</button>
     </form>
